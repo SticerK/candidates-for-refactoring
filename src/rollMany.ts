@@ -3,3 +3,5 @@ const rollMany = (n: number, pins: number) => {
     console.log(pins);
   }
 };
+
+// использовать понятное название переменной n-> numberOfRolls

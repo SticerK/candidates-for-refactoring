@@ -7,5 +7,7 @@ const hasForbiddenStatus = (response: Response) => {
 };
 
 const hasServiceUnavailableStatus = (response: Response) => {
-  return response.status === 503;
+  return response.status === HttpStatusCode.STATUS_503;
 };
+
+// все строки и числа записывать в константы. При изменении статуса нужно будет поправить в одном месте, а не во всем приложении.
