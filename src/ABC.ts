@@ -20,5 +20,13 @@ class C {
 }
 
 // Использование транзитивного обращения
+// const a = new A();
+// a.getB().getC().doSomething();
+
+
+//Создать промежуточные переменные, улучшает читаемость кода
+
 const a = new A();
-a.getB().getC().doSomething();
+const b = a.getB(); 
+const c = b.getC(); 
+c.doSomething(); 
