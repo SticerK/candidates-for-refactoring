@@ -1,3 +1,6 @@
-processVerificationRequest();
-makeUpdateRequest();
-processDeletion();
+processVerificationRequest?.();
+makeUpdateRequest?.();
+processDeletion?.();
+
+
+// проверка функции на undefined

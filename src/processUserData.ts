@@ -3,7 +3,7 @@ function processUserData(user) {
   const userData = getUserData(user);
 
   // Проверяем данные пользователя
-  if (userData.age >= 18) {
+  if (validateAge(user.age)) {
     // Обрабатываем данные
     processUser(user);
   } else {
@@ -11,3 +11,6 @@ function processUserData(user) {
     console.error('User is under 18');
   }
 }
+
+const validateAge = (age:number):boolean => age >= 18  
+// создаем отдельную функцию для проверки возраста. Улучшает читаемость кода 

@@ -1,3 +1,5 @@
-const match = rawHeaderLine.match(headerPattern);
+const [value1, value2] = rawHeaderLine.match(headerPattern);
 
-headers.set(match[1].toLowerCase(), match[2]);
+headers.set(value1.toLowerCase(), value2);
+
+// деструктуризация значений. Улучшает читаемость кода  

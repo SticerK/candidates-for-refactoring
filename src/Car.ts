@@ -6,3 +6,6 @@ class Car {
   private price: number;
   private mileage: number;
 }
+
+
+// добавить constructor для данных значений 

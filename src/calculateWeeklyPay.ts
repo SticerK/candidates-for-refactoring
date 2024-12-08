@@ -8,3 +8,5 @@ function calculateWeeklyPay(overtime: boolean): number {
   const overtimePay: number = Math.round(overTime * overtimeRate);
   return straightPay + overtimePay;
 }
+
+// создать две отдельные функции с расчетом заработка, которые будут возвращать straightPay и overtimePay

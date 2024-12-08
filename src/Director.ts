@@ -11,7 +11,7 @@ class Director {
     this.calendar = calendar;
   }
 
-  scheduleMeeting(event) {
+  scheduleMeeting(event: Event) {
     this.calendar.addEvent(event);
   }
 }
